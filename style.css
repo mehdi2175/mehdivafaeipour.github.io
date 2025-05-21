@@ -1,0 +1,45 @@
+
+body {
+  font-family: sans-serif;
+  direction: rtl;
+  padding: 10px;
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
+}
+header, footer {
+  background-color: #003366;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav {
+  background-color: #eeeeee;
+  padding: 1em;
+  text-align: center;
+}
+main {
+  margin: 20px;
+}
+section {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+button {
+  padding: 10px;
+  margin-top: 10px;
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
