@@ -1,89 +1,28 @@
 
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آموزش هوش مصنوعی</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AI Education</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="لوگو سایت" class="logo">
-        <h1>آموزش هوش مصنوعی</h1>
-        <nav>
-            <a href="index.html">خانه</a>
-            <a href="lessons.html">دروس</a>
-            <a href="about.html">درباره ما</a>
-            <a href="contact.html">ارتباط با ما</a>
-        </nav>
-    </header>
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
+<header>
+    <img src="../logo.png" class="logo" alt="Logo">
+    <h1>AI Education</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 <main>
-<input type="text" id="search-box" placeholder="جستجو در مطالب..." onkeyup="searchFunction()">
-<script>
-function searchFunction() {
-    var input = document.getElementById("search-box").value.toLowerCase();
-    var items = document.querySelectorAll("main li, main p");
-    items.forEach(function(item) {
-        item.style.display = item.innerText.toLowerCase().includes(input) ? "" : "none";
-    });
-}
-</script>
-
-<script>
-function like() {
-    let count = localStorage.getItem('likes') || 0;
-    count++;
-    localStorage.setItem('likes', count);
-    document.getElementById('like-count').innerText = count;
-}
-</script>
-<button onclick="like()">پسندیدم</button>
-<p>تعداد پسند: <span id="like-count">0</span></p>
-
-        <h2>به سایت آموزش هوش مصنوعی خوش آمدید</h2>
-        <p>در این سایت می‌توانید از صفر تا صد با هوش مصنوعی آشنا شوید.</p>
-    </main>
-    <footer>
-        <p>© 2025 مهندس مهدی وفائی‌پور</p>
-    </footer>
-
-<section id="contact" class="section">
-  <h2>ارتباط با ما</h2>
-  <form id="contactForm" action="https://formspree.io/f/mnqeyobg" method="POST">
-    <label>نام:</label>
-    <input type="text" name="name" required>
-    <label>ایمیل:</label>
-    <input type="email" name="email" required>
-    <label>پیام شما:</label>
-    <textarea name="message" rows="5" required></textarea>
-    <button type="submit">ارسال پیام</button>
-  </form>
-  <p>یا از طریق شبکه‌های اجتماعی زیر در ارتباط باشید:</p>
-  <ul>
-    <li><a href="https://t.me/Iran_AI_Teacher" target="_blank">تلگرام</a></li>
-    <li><a href="https://twitter.com/mehdivafaeipoor" target="_blank">توییتر</a></li>
-    <li><a href="mailto:mehdi.vafaeipour@gmail.com">ایمیل مستقیم</a></li>
-    <li><a href="https://youtube.com/@mehdivafaeipoor" target="_blank">یوتیوب</a></li>
-  </ul>
-</section>
-
-
-<button id="scrollToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ بالا</button>
-<script>
-window.onscroll = () => {
-  const btn = document.getElementById('scrollToTop');
-  btn.style.display = window.scrollY > 300 ? 'block' : 'none';
-};
-</script>
+    <h2>Welcome to AI Education</h2>
+    <p>Learn artificial intelligence from the ground up.</p>
+</main>
+<footer>
+    <p>© 2025 Mehdi Vafaeipour</p>
+</footer>
 </body>
-
 </html>
